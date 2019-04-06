@@ -1,0 +1,10 @@
+<div class="board">
+    <app-button *ngFor="let button of buttons" [button]="button"
+                [selected]="activeButton && button.id === activeButton.id"
+                (onSelect)="checkMatchedColors($event)"></app-button>
+</div>
+
+<div *ngIf="!buttons.length" style="text-align: center;">
+    <h1 style="text-align: center; cursor: pointer" (click)="createGame()">Zagraj ponownie</h1>
+    <h3>Czas gry: {{time}}</h3>
+</div>

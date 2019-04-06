@@ -29,7 +29,9 @@
             "styles": [
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/color-scheme.js"
+            ]
           },
           "configurations": {
             "production": {
