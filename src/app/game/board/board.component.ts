@@ -33,12 +33,12 @@ export class BoardComponent implements OnInit {
     createGame() {
         this.buttons = this.shuffleArray(this.buttons);
         const scm = new ColorScheme;
-        scm.from_hue(21)
+        scm.from_hue(150)
             .scheme('triade')
             .distance(0.1)
-            .add_complement(false)
-            .variation('pastel')
-            .web_safe(true);
+            .add_complement(true)
+            .variation('soft')
+            .web_safe(false);
 
         const colors: string[] = scm.colors();
 
