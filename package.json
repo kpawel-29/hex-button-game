@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build",
+    "build": "ng build --output-hashing=all --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -48,7 +48,7 @@
     "typescript": "~3.2.2"
   },
   "engines": {
-    "node": "6.11.0",
+    "node": "8.9",
     "npm": "3.10.10"
   }
 }
